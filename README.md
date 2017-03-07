@@ -17,3 +17,10 @@ Libraries
  * Scalpel - http://github.com/JakeWharton/scalpel
  * LeakCanary - http://github.com/square/leakcanary
  * Telescope - https://github.com/mattprecious/telescope
+
+# References (special thanks)
+- [Uncle Bob: The Clean Architecture](https://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html) by Uncle Bob
+- [The Repository pattern](https://msdn.microsoft.com/en-us/library/ff649690.aspx) by Microsoft
+- [Effective Android UI](https://github.com/pedrovgs/EffectiveAndroidUI) by Pedro Gomez
+- [Android Clean Architecture](https://github.com/android10/Android-CleanArchitecture) by Fernando Cejas
+- [U2020](https://github.com/JakeWharton/u2020) by Jake Wharton
