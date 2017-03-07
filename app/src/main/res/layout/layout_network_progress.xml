@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/spacing_large" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/spacing_large"
+            android:text="@string/wait" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oopsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_no_internet"
+            android:contentDescription="@null"
+            android:layout_marginBottom="@dimen/spacing_small"/>
+
+        <TextView
+            style="@style/TextSecondaryStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/spacing_medium"
+            android:text="@string/internet_connection_failed" />
+
+        <TextView
+            style="@style/TextSecondaryStyle"
+            android:id="@+id/oopsMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:gravity="center"
+            android:text="@string/internet_connection_problem" />
+
+        <TextView
+            android:id="@+id/buttonRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/spacing_large"
+            android:background="?selectableItemBackgroundBorderless"
+            android:textColor="@color/accent"
+            android:textStyle="bold"
+            android:text="@string/retry" />
+    </LinearLayout>
+</FrameLayout>

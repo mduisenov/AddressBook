@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AddressBookTheme" parent="Theme.AddressBook.Base">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+
+    <style name="Theme.AddressBook.Activity.Main" parent="Theme.AddressBookTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

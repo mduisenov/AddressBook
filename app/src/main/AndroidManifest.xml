@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="no.taxsee.addressbook">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.taxsee.DemoApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AddressBookTheme"
+        tools:overrideLibrary="timber.log">
+
+        <activity
+            android:name="com.taxsee.ui.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name="com.taxsee.ui.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AddressBookTheme.LaunchScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.taxsee.ui.auth.AuthActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.taxsee.ui.main.employee.EmployeeActivity"
+            android:screenOrientation="portrait" />
+
+        <!--Dummy activity for RxActivityResult-->
+        <activity android:name="com.taxsee.ui.rx_activity_result.HolderActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fc531fefa37091085610c7e0226ac88d72112a87" />
+    </application>
+
+</manifest>

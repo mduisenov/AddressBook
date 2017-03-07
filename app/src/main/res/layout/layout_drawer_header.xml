@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="180.0dip"
+    android:layout_gravity="center_vertical"
+    android:gravity="top"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_splash" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewBackground"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="User"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageViewProfilePhoto"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_above="@+id/textViewEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_account_circle_black_48dp"
+        android:tint="@android:color/white" />
+</RelativeLayout>

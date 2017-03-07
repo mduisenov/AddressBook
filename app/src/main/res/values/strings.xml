@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Адресная Книга</string>
+
+    <!--Auth section-->
+    <string name="auth_sign_in">Войти</string>
+    <string name="auth_sign_up">Зарегистрироваться</string>
+    <string name="auth_input_login">Введите логин</string>
+    <string name="auth_input_password">Введите пароль</string>
+    <string name="empty_field">Вы ввели не все данные</string>
+
+    <!--Employee-->
+    <string name="employee_phone">Телефон</string>
+    <string name="employee_name">Имя, Фамилия</string>
+    <string name="employee_title">Должность</string>
+    <string name="employee_email">Email</string>
+
+    <!--Logout dialog-->
+    <string name="logout_title">Выход</string>
+    <string name="logout_message">Действительно хотите выйти?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <!--Api caption-->
+    <string name="wait">Подождите</string>
+    <string name="retry">Повторить</string>
+    <string name="internet_connection_failed">Сбой подключения!</string>
+    <string name="internet_connection_problem">Проверьте подключение к интернету</string>
+    <string name="network_error_msg_something_went_wrong">Ой! что-то пошло не так</string>
+    <string name="loading_data_error_message">Проверьте подключение к интернету или порпробуйте обновить страницу</string>
+
+
+
+</resources>
