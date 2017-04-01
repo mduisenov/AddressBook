@@ -1,4 +1,4 @@
-package com.taxsee.data.prefs.secure;
+package com.taxsee.data.prefs;
 
 public class SecureStringPreference {
     private final String key;

@@ -14,6 +14,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import no.taxsee.addressbook.R;
 
+/**
+ * Created by Marat Duisenov on 23.02.2017.
+ */
 public class NavigationDrawerHeaderView extends FrameLayout {
 
     @BindView(R.id.textViewEmail) TextView mTextViewEmail;

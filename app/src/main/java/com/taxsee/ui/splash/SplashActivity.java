@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.crashlytics.android.Crashlytics;
-import com.taxsee.data.prefs.secure.SecureStringPreference;
+import com.taxsee.data.prefs.SecureStringPreference;
 import com.taxsee.data.repository.auth.PasswordPref;
 import com.taxsee.data.repository.auth.UserNamePref;
 import com.taxsee.presenter.modules.splash.SplashPresenter;

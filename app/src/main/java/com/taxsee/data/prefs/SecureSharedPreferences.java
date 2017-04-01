@@ -1,4 +1,4 @@
-package com.taxsee.data.prefs.secure;
+package com.taxsee.data.prefs;
 
 import android.content.Context;
 import android.content.SharedPreferences;

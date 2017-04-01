@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.taxsee.data.net.ApiModule;
-import com.taxsee.data.prefs.secure.SecureStringPreference;
+import com.taxsee.data.prefs.SecureStringPreference;
 import com.taxsee.data.repository.auth.PasswordPref;
 import com.taxsee.data.repository.auth.UserNamePref;
 import com.taxsee.domain.entity.Employee;

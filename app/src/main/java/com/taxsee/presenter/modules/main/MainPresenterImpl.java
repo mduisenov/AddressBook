@@ -2,7 +2,7 @@ package com.taxsee.presenter.modules.main;
 
 import android.util.Log;
 
-import com.taxsee.data.prefs.secure.SecureStringPreference;
+import com.taxsee.data.prefs.SecureStringPreference;
 import com.taxsee.data.repository.auth.PasswordPref;
 import com.taxsee.data.repository.auth.UserNamePref;
 import com.taxsee.domain.entity.Department;

@@ -3,6 +3,7 @@ package com.taxsee.data.repository.auth;
 import com.taxsee.data.model.auth.AuthResponse;
 import com.taxsee.data.net.AuthService;
 import com.taxsee.domain.repository.AuthRepository;
+import com.taxsee.util.Preconditions;
 
 import javax.inject.Inject;
 
@@ -24,6 +25,8 @@ public class AuthRepositoryImpl implements AuthRepository {
 
     @Override
     public Observable<AuthResponse> signIn(String login,  String password) {
+        Preconditions.checkNotNull(login);
+        Preconditions.checkNotNull(password);
         return mAuthService.signIn(login, password)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

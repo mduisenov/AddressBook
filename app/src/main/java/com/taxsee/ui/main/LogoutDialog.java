@@ -7,7 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 
-import com.taxsee.data.prefs.secure.SecureStringPreference;
+import com.taxsee.data.prefs.SecureStringPreference;
 import com.taxsee.data.repository.auth.PasswordPref;
 import com.taxsee.data.repository.auth.UserNamePref;
 import com.taxsee.ui.auth.AuthActivity;

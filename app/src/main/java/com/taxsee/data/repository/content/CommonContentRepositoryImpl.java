@@ -4,6 +4,7 @@ import com.taxsee.data.exception.NetworkConnectionException;
 import com.taxsee.data.net.ContentService;
 import com.taxsee.domain.entity.Department;
 import com.taxsee.domain.repository.CommonContentRepository;
+import com.taxsee.util.Preconditions;
 
 import java.io.IOException;
 
@@ -28,6 +29,8 @@ public class CommonContentRepositoryImpl implements CommonContentRepository {
 
     @Override
     public Observable<TreeNode<Department>> getAll(String login, String password) {
+        Preconditions.checkNotNull(login);
+        Preconditions.checkNotNull(password);
         return mContentService.getAll(login, password)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

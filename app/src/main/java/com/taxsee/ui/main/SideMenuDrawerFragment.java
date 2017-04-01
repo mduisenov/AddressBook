@@ -11,7 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.taxsee.data.prefs.secure.SecureStringPreference;
+import com.taxsee.data.prefs.SecureStringPreference;
 import com.taxsee.data.repository.auth.UserNamePref;
 import com.taxsee.ui.base.BaseFragment;
 import com.taxsee.ui.bus.RxBus;

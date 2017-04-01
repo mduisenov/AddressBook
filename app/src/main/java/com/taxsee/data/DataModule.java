@@ -5,11 +5,10 @@ import android.content.SharedPreferences;
 
 import com.f2prateek.rx.preferences.RxSharedPreferences;
 import com.jakewharton.byteunits.DecimalByteUnit;
-import com.taxsee.data.executor.JobExecutor;
 import com.taxsee.data.net.ApiModule;
 import com.taxsee.data.net.RestApiInterceptor;
-import com.taxsee.data.prefs.secure.SecureSharedPreferences;
-import com.taxsee.data.prefs.secure.SecureStringPreference;
+import com.taxsee.data.prefs.SecureSharedPreferences;
+import com.taxsee.data.prefs.SecureStringPreference;
 import com.taxsee.data.repository.RepositoryModule;
 import com.taxsee.data.repository.auth.PasswordPref;
 import com.taxsee.data.repository.auth.UserNamePref;
@@ -17,7 +16,6 @@ import com.taxsee.data.repository.auth.UserNamePref;
 import org.threeten.bp.Clock;
 
 import java.io.File;
-import java.util.concurrent.Executor;
 
 import javax.inject.Singleton;
 
@@ -80,12 +78,6 @@ public final class DataModule {
     @Singleton
     SecureStringPreference providesPasswordPref(SecureSharedPreferences preferences) {
         return new SecureStringPreference(preferences, "pass");
-    }
-
-    @Provides
-    @Singleton
-    Executor provideThreadExecutor(JobExecutor jobExecutor) {
-        return jobExecutor;
     }
 
     public static OkHttpClient.Builder createOkHttpClient(Application app) {
