@@ -29,3 +29,5 @@ Libraries
 - [Effective Android UI](https://github.com/pedrovgs/EffectiveAndroidUI) by Pedro Gomez
 - [Android Clean Architecture](https://github.com/android10/Android-CleanArchitecture) by Fernando Cejas
 - [U2020](https://github.com/JakeWharton/u2020) by Jake Wharton
+- [Android-architecture](https://github.com/behzodbek/Android-architecture) by Behzodbek Qodirov
+
